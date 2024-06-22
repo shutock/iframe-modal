@@ -3,9 +3,9 @@ import { createElement, forwardRef } from "react";
 const format = (number: number) => {
   if (number === 0) return [number];
 
-  if (Math.abs(number) >= 0.0001) {
-    const absNumber = Math.abs(number);
+  const absNumber = Math.abs(number);
 
+  if (absNumber >= 0.0001) {
     let digits = 2;
 
     if (absNumber < 0.1) digits++;
