@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { FormattedNumber } from "./formatted-number";
+
+import { FormattedNumber } from "@/components";
 
 export const NumbersPage: React.FC = () => {
   const defaultValue = 0.00001337;
